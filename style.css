@@ -1,0 +1,279 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  overflow: hidden;
+}
+
+.homescreen {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 99;
+}
+
+#demo-canvas {
+  position: absolute;
+  z-index: 3;
+}
+
+.l {
+  color: white;
+  font-size: 175px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+.item {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  letter-spacing: 8px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.menu-about:hover {
+  color: #AECAFF;
+}
+
+.menu-photoshoots:hover {
+  color: #FFCFD1;
+}
+
+.menu-design:hover {
+  color: #A8949D;
+}
+
+.menu-newsletters:hover {
+  color: #80839C;
+}
+
+.menu-video:hover {
+  color: #8498BF;
+}
+
+.menu-personal:hover {
+  color: #FFCFD1;
+}
+
+.works {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  /*height: 100%;*/
+}
+
+.menu {
+  height: 50px;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  top: 0;
+  /*overflow-x: hidden; /* Disable horizontal scroll */
+  z-index: 100;
+  padding: 30px 50px;
+  visibility: hidden;
+}
+
+.menu-button {
+  position: absolute;
+  bottom: 5%;
+  cursor: pointer;
+  filter: brightness(50%);
+  z-index: 6;
+  transform: rotate(90deg) scaleX(.8) scaleY(.9);
+}
+
+.menu-button:hover {
+  filter: brightness(100%);
+  transform: scale(1.1) rotate(90deg) scaleX(.8) scaleY(.9);
+}
+
+#demo-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+#about {
+  height: 370%;
+  width: 100%;
+  background-color: #3a3a3a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#about > div {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 150px;
+}
+
+.about-title, .loading {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 60px;
+  letter-spacing: 5px;
+  color: white;
+}
+
+.about-1 {
+  padding-top: 150px !important;
+}
+
+.about-2 {
+  padding: 0 250px !important;
+}
+
+.about-info {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 25px;
+  letter-spacing: 3px;
+  line-height: 50px;
+  color: white;
+  margin: 50px;
+}
+
+.about-skills {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  letter-spacing: 3px;
+  line-height: 50px;
+  color: white;
+}
+
+.about-skills-title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.about-graph {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: right;
+}
+
+.about-graph-text {
+  width: 200px;
+}
+
+.bar {
+  border: 0.5px solid white;
+
+  height: 15px;
+  margin-left: 20px;
+}
+
+.b100 {
+  width: 300px;
+}
+
+.b70 {
+  width: 210px;
+}
+
+.b50 {
+  width: 150px;
+}
+
+.loading {
+  font-size: 50px;
+}
+
+.loading:hover {
+  font-size: 53px;
+  transition: 0.5s;
+}
+
+a.loading {
+  text-decoration: none;
+}
+
+#backToTop {
+  display: none;
+}
+
+.arrow {
+  margin-left: 10px;
+}
+
+.arrow-box {
+  text-decoration: none;
+  color: white;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  opacity: 0.5;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  z-index: 101;
+}
+
+.arrow-box:hover {
+  opacity: 1;
+}
+
+/*---------------------------*/
+
+.animate-in {
+    -webkit-animation: fadeIn .5s ease-in;
+    animation: fadeIn .5s ease-in;
+}
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/*p h o t o s h o o t s*/

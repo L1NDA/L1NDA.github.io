@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,900" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>LQ</title>
+  </head>
+
+  <body class="animate-in">
+    <!--https://kasper.io/How-to-create-transition-effect-between-pages/-->
+    <div class="container">
+      <div class="homescreen" id="main">
+        <canvas id="demo-canvas"></canvas>
+        <h1 class="l">LQ</h1>
+        <a href="#about"><img class="menu-button" src="static/arrow.png"></img></a>
+      </div>
+    </div>
+
+    <nav class="works menu" id="menu">
+        <a href="#about" class="item menu-about">about</a>
+        <a href="#" class="item menu-personal">personal projects</a>
+        <a href="#" class="item menu-design">design</a>
+        <a href="photoshoots.html" class="item menu-photoshoots">photoshoots</a>
+        <a href="#" class="item menu-newsletters">newsletters</a>
+        <a href="#" class="item menu-video">video</a>
+    </nav>
+
+    <a class="arrow-box" id="backToTop" href="#">TOP <i class="fa fa-long-arrow-up fa-lg arrow" aria-hidden="true"></i></a>
+
+    <div id="about" name="about">
+      <div class="about-1">
+        <div class="about-title">hey, i'm linda :)</div>
+      </div>
+
+      <div class="about-2">
+        <img src="static/propic-circle.png"/>
+        <div class="about-info">
+          <b>from</b>: boston, ma<br>
+          <b>currently</b>: student @ harvard university <br>(c/o 2020)<br>
+          <b>interests</b>: photography, dance, hiking, problem solving<br>
+        </div>
+      </div>
+
+      <div class="about-3">
+        <div class="about-skills">
+          <div class="about-skills-title">skills</div>
+          <div class="about-graph"> <div class="about-graph-text"> design thinking </div> <div class="bar b100"></div></div>
+          <div class="about-graph"> <div class="about-graph-text"> ui/ux/pm </div> <div class="bar b70"></div></div>
+          <div class="about-graph"> <div class="about-graph-text"> adobe indesign </div>  <div class="bar b100"></div></div>
+          <div class="about-graph"> <div class="about-graph-text"> adobe photoshop </div>  <div class="bar b100"></div></div>
+          <div class="about-graph"> <div class="about-graph-text"> adobe lightroom </div>  <div class="bar b100"></div></div>
+          <div class="about-graph"> <div class="about-graph-text"> adobe premiere </div>  <div class="bar b70"></div></div>
+          <div class="about-graph"> <div class="about-graph-text"> html/css </div>  <div class="bar b70"></div></div>
+          <div class="about-graph"> <div class="about-graph-text"> javascript/reactjs </div>  <div class="bar b50"></div></div>
+        </div>
+      </div>
+
+      <div class="about-4">
+        <a class="loading" href="mailto:qinx@college.harvard.edu" target="_blank">send me a note</a>
+      </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="js/TweenLite.min.js"></script>
+		<script src="js/EasePack.min.js"></script>
+		<script src="js/rAF.js"></script>
+		<script src="js/demo-1.js"></script>
+    <script src="js/debounce.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="scripts.js" type="text/javascript"></script>
+
+  </body>
+</html>

@@ -100,7 +100,7 @@ html, body {
   visibility: hidden;
 }
 
-.menu-button {
+.menu-button-head {
   position: absolute;
   bottom: 5%;
   cursor: pointer;
@@ -109,9 +109,19 @@ html, body {
   transform: rotate(90deg) scaleX(.8) scaleY(.9);
 }
 
-.menu-button:hover {
+.menu-button-head:hover {
   filter: brightness(100%);
   transform: scale(1.1) rotate(90deg) scaleX(.8) scaleY(.9);
+}
+
+.menu-button {
+  position: relative;
+  bottom: -100px;
+}
+
+.menu-button-body {
+  position: relative;
+  bottom: -180px;
 }
 
 #demo-canvas {
@@ -146,12 +156,22 @@ html, body {
   color: white;
 }
 
-.about-1 {
-  padding-top: 150px !important;
+#about-1 {
+  padding-top: 125px !important;
+  flex-direction: column;
 }
 
-.about-2 {
+.propic {
+  margin-bottom: 60px;
+}
+
+#about-2 {
   padding: 0 250px !important;
+  flex-direction: column;
+}
+
+#about-3 {
+  flex-direction: column;
 }
 
 .about-info {

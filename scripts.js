@@ -64,8 +64,8 @@ window.sr = ScrollReveal({
   reset: true,
   scale: .95,
 });
-sr.reveal('.about-title');
-sr.reveal('.about-2');
-sr.reveal('.about-3');
+sr.reveal('#about-1');
+sr.reveal('#about-2');
+sr.reveal('#about-3');
 sr.reveal('.bar', { origin: 'left', duration: 500 }, 250);
-sr.reveal('.about-4', { delay: 1000, duration: 500 });
+sr.reveal('#about-4', { delay: 1000, duration: 500 });

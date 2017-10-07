@@ -2,13 +2,6 @@ window.addEventListener("beforeunload", function () {
   document.body.classList.add("animate-out");
 });
 
-// $(function () {
-//   $(document).scroll(function () {
-//     var $nav = $(".menu");
-//     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-//   });
-// });
-
 $(document).ready(function(){
 
   // Add smooth scrolling to all links
@@ -37,9 +30,8 @@ $(document).ready(function(){
 
 });
 
-$(function scroll(){
+$(function topButton(){
   $(window).scroll($.throttle(500, function () {
-    console.log(window.scrollY);
     if (window.scrollY > 60) {
       $('#backToTop').fadeIn('slow');
     } else {
@@ -50,8 +42,16 @@ $(function scroll(){
 
 $(function scrollTop() {
   $('#backToTop').on('click', function(){
-    $("html, body").animate({ scrollTop: 0 }, 500);
-    return;
+    // $("html, body").animate({ scrollTop: 0 }, 500);
+    // return;
+    $.scrollify.move("#home");
+  });
+})
+
+$(function scroll() {
+  $.scrollify({
+    section : ".section",
+    sectionName : "section-name",
   });
 })
 
@@ -64,8 +64,8 @@ window.sr = ScrollReveal({
   reset: true,
   scale: .95,
 });
-sr.reveal('#about-1');
-sr.reveal('#about-2');
-sr.reveal('#about-3');
+// sr.reveal('#about-1');
+// sr.reveal('#about-2');
+// sr.reveal('#about-3');
 sr.reveal('.bar', { origin: 'left', duration: 500 }, 250);
-sr.reveal('#about-4', { delay: 1000, duration: 500 });
+// sr.reveal('#about-4', { delay: 1000, duration: 500 });

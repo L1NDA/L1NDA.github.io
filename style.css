@@ -17,6 +17,11 @@ html, body {
   overflow: hidden;
 }
 
+/*#fullscreen {
+  height: 100%;
+  width: 100%;
+}*/
+
 .homescreen {
   height: 100%;
   margin: 0;
@@ -132,7 +137,14 @@ html, body {
 #about {
   height: 370%;
   width: 100%;
-  background-color: #3a3a3a;
+  background: rgba(58,58,58,1);
+  background: -moz-linear-gradient(top, rgba(58,58,58,1) 0%, rgba(110,121,138,1) 62%, rgba(148,124,136,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(58,58,58,1)), color-stop(62%, rgba(110,121,138,1)), color-stop(100%, rgba(148,124,136,1)));
+  background: -webkit-linear-gradient(top, rgba(58,58,58,1) 0%, rgba(110,121,138,1) 62%, rgba(148,124,136,1) 100%);
+  background: -o-linear-gradient(top, rgba(58,58,58,1) 0%, rgba(110,121,138,1) 62%, rgba(148,124,136,1) 100%);
+  background: -ms-linear-gradient(top, rgba(58,58,58,1) 0%, rgba(110,121,138,1) 62%, rgba(148,124,136,1) 100%);
+  background: linear-gradient(to bottom, rgba(58,58,58,1) 0%, rgba(110,121,138,1) 62%, rgba(148,124,136,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a3a', endColorstr='#947c88', GradientType=0 );
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,22 +168,12 @@ html, body {
   color: white;
 }
 
-#about-1 {
-  padding-top: 125px !important;
+#about-1, #about-2, #about-3 {
   flex-direction: column;
 }
 
 .propic {
   margin-bottom: 60px;
-}
-
-#about-2 {
-  padding: 0 250px !important;
-  flex-direction: column;
-}
-
-#about-3 {
-  flex-direction: column;
 }
 
 .about-info {
@@ -260,7 +262,6 @@ a.loading {
   position: fixed;
   bottom: 2%;
   right: 2%;
-  opacity: 0.5;
   font-family: 'Lato', sans-serif;
   font-weight: 100;
   font-size: 20px;

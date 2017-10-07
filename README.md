@@ -3,9 +3,11 @@
 A simple personal website I made for myself that I am slowly adding to
 and building on.
 
-Last update: added snap scrolling and a gradient background
+Last update: add resume and contact links
 
-Next goal: add resume and contact links
+Previous updates: added snap scrolling and a gradient background
+
+Next goal: create platform to show photography/design portfolio for small-scale commissions around the Harvard area
 
 ### Special Thanks To
 

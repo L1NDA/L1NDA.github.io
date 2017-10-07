@@ -42,9 +42,10 @@ html, body {
 
 .l {
   color: white;
-  font-size: 175px;
+  font-size: 125px;
   font-family: 'Lato', sans-serif;
-  font-weight: 900;
+  font-weight: 100;
+  letter-spacing: 20px;
 }
 
 .item {
@@ -108,6 +109,7 @@ html, body {
 .menu-button-head {
   position: absolute;
   bottom: 5%;
+  left: 48%;
   cursor: pointer;
   filter: brightness(50%);
   z-index: 6;
@@ -127,6 +129,31 @@ html, body {
 .menu-button-body {
   position: relative;
   bottom: -180px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  left: 1%;
+  bottom: 2%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-size: 20px;
+  z-index: 105;
+}
+
+.link {
+  margin: 0 5px;
+  text-decoration: none;
+  color: white;
+  opacity: .6;
+}
+
+.link:hover {
+  opacity: 1;
 }
 
 #demo-canvas {
@@ -270,6 +297,7 @@ a.loading {
   align-items: flex-end;
   justify-content: flex-end;
   z-index: 101;
+  opacity: 0.6;
 }
 
 .arrow-box:hover {

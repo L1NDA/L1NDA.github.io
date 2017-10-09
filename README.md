@@ -9,6 +9,10 @@ Previous updates: added snap scrolling and a gradient background
 
 Next goal: create platform to show photography/design portfolio for small-scale commissions around the Harvard area
 
+Other goals: Improve mobile-responsive design
+
+---
+
 ### Special Thanks To
 
 [Scroll Reveal](https://github.com/jlmakes/scrollreveal)

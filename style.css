@@ -133,8 +133,9 @@ html, body {
 
 .links {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
   position: fixed;
   left: 1%;
   bottom: 2%;
@@ -143,6 +144,12 @@ html, body {
   letter-spacing: 1px;
   font-size: 20px;
   z-index: 105;
+}
+
+.button-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .link {
@@ -154,6 +161,10 @@ html, body {
 
 .link:hover {
   opacity: 1;
+}
+
+.resume {
+  margin-bottom: 5px;
 }
 
 #demo-canvas {

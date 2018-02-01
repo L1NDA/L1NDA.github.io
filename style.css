@@ -7,9 +7,15 @@ html {
 }
 
 html, body {
-  height: 100%;
+  /* height: 100%; */
+  width: 100%;
   padding: 0;
   margin: 0;
+  /* overflow: hidden; */
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .container {
@@ -35,9 +41,12 @@ html, body {
   z-index: 99;
 }
 
-#demo-canvas {
-  position: absolute;
-  z-index: 3;
+.h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 45px;
+  letter-spacing: 10px;
+  color: white;
 }
 
 .l {
@@ -53,7 +62,7 @@ html, body {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 11px;
-  letter-spacing: 8px;
+  letter-spacing: 6px;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -63,27 +72,27 @@ html, body {
   height: 100%;
 }
 
-.menu-about:hover {
+.menu-design:hover {
   color: #AECAFF;
 }
 
-.menu-photoshoots:hover {
+.menu-product:hover {
   color: #FFCFD1;
 }
 
-.menu-design:hover {
+.menu-personal:hover {
   color: #A8949D;
 }
 
-.menu-newsletters:hover {
+.menu-about:hover {
   color: #80839C;
 }
 
-.menu-video:hover {
+.menu-contact:hover {
   color: #8498BF;
 }
 
-.menu-personal:hover {
+.menu-photo:hover {
   color: #FFCFD1;
 }
 
@@ -92,7 +101,7 @@ html, body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  /*height: 100%;*/
+  height: 100%;
 }
 
 .menu {
@@ -100,10 +109,10 @@ html, body {
   width: 100%;
   position: fixed; /* Stay in place */
   top: 0;
-  /*overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-x: hidden; /* Disable horizontal scroll */
   z-index: 100;
   padding: 30px 50px;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 .menu-button-head {
@@ -124,11 +133,19 @@ html, body {
 .menu-button {
   position: relative;
   bottom: -100px;
+  cursor: pointer;
+  filter: brightness(50%);
+  transform: rotate(90deg) scaleX(.8) scaleY(.9);
 }
 
-.menu-button-body {
+.menu-button:hover {
+  filter: brightness(100%);
+  transform: scale(1.1) rotate(90deg) scaleX(.8) scaleY(.9);
+}
+
+.menu-button-lower {
   position: relative;
-  bottom: -180px;
+  bottom: -140px;
 }
 
 .links {
@@ -167,14 +184,16 @@ html, body {
   margin-bottom: 5px;
 }
 
-#demo-canvas {
+#canvas {
   width: 100%;
   height: 100%;
+  position: absolute;
+  z-index: 3;
 }
 
-#about {
-  height: 370%;
+#background {
   width: 100%;
+  height: 100%;
   background: rgba(58,58,58,1);
   background: -moz-linear-gradient(top, rgba(58,58,58,1) 0%, rgba(110,121,138,1) 62%, rgba(148,124,136,1) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(58,58,58,1)), color-stop(62%, rgba(110,121,138,1)), color-stop(100%, rgba(148,124,136,1)));
@@ -183,6 +202,10 @@ html, body {
   background: -ms-linear-gradient(top, rgba(58,58,58,1) 0%, rgba(110,121,138,1) 62%, rgba(148,124,136,1) 100%);
   background: linear-gradient(to bottom, rgba(58,58,58,1) 0%, rgba(110,121,138,1) 62%, rgba(148,124,136,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a3a', endColorstr='#947c88', GradientType=0 );
+}
+
+#about {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -190,7 +213,7 @@ html, body {
 }
 
 #about > div {
-  height: 25%;
+  height: 85vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -211,17 +234,44 @@ html, body {
 }
 
 .propic {
-  margin-bottom: 60px;
+  margin: 150px 0 150px 0;
+  transform: scale(0.4);
+}
+
+#svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 250px; */
 }
 
 .about-info {
   font-family: 'Lato', sans-serif;
   font-weight: 100;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 3px;
-  line-height: 50px;
+  line-height: 40px;
   color: white;
   margin: 50px;
+}
+
+#about-1 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.line {
+  text-decoration: line-through;
+  margin: 0 8px;
+}
+
+.line-container {
+  display: inline-flex;
+}
+
+.smaller {
+  margin-top: 50px;
+  font-size: 16px;
 }
 
 .about-skills {
@@ -317,6 +367,106 @@ a.loading {
 
 .arrow-box:hover {
   opacity: 1;
+}
+
+/*---------------------------*/
+   /* personal projects
+   product, contact */
+/*---------------------------*/
+
+/* #personalprojects, #product, #contact {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+#pp-id, #product-id, #contact-id {
+  margin-top: 50px;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pp-page, .uxp-page, .contact-container, .pp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pp-title {
+  text-align: left;
+  transform: rotate(90deg) !important;
+}
+
+.pp-container, .uxp-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+/*---------------------------*/
+        /* carousel */
+
+        .pp-carousel {
+          margin: 100px;
+          width: 90%;
+          height: 90%;
+        }
+
+        .ppc-item {
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+          flex-direction: row;
+          height: 100%;
+        }
+
+        .ppc-text {
+          margin: 25px;
+          font-size: 16px;
+          color: white;
+          line-height: 20px;
+          letter-spacing: 1px;
+          text-align: justify;
+          font-family: 'Lato', sans-serif;
+          font-weight: 100;
+        }
+
+        .ppc-link {
+          color: white;
+        }
+
+        .div-img {
+          margin: 25px;
+          width: 400px;
+          object-fit: contain;
+          box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+        }
+
+/*---------------------------*/
+
+
+.uxp-container {
+  justify-content: flex-end;
+}
+
+.uxp-title {
+  text-align: right;
+  transform: rotate(-90deg) !important;
+}
+
+.pp, .uxp {
+  background: rgba(58,58,58,1);
+  height: 80%;
+  width: 70%;
+  margin: 35px 0;
 }
 
 /*---------------------------*/

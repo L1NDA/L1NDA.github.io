@@ -36,11 +36,15 @@ $(document).ready(function(){
   handwriting(controller);
   popup(controller);
 
-  $('.pp-carousel').slick({
-    adaptiveHeight: true
-  });
+  // $('.pp-carousel').slick({
+  //   adaptiveHeight: true
+  // });
 
-  // $(".ppc-dots").appendDots;
+  // adds flip to cards; can clean later with es6
+  $("#pp1").flip({trigger: "hover"});
+  $("#pp2").flip({trigger: "hover"});
+  $("#pp3").flip({trigger: "hover"});
+  $("#pp4").flip({trigger: "hover"});
 
 });
 
